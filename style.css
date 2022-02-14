@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-image: url(/images/bg-desktop.svg);
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+}
+.header-logo { 
+    height: 3em;
+    margin: 3%;
+}
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.copy-image {
+    width: 50%;
+}
+.copy-container {
+    width: 40%;
+    color: #fdfdfd;
+    font-family: 'Poppins', sans-serif;
+}
+.copy-title {
+    font-weight: 600;
+    font-size: 2em;
+    margin: auto;
+}
+.copy-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
+    margin-bottom: 2em;
+}
+.copy-link {
+    text-decoration: none;
+    background-color: #fdfdfd;
+    color: hsl(257, 40%, 49%);
+    padding: 10px 40px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px rgb(70, 69, 69);
+}
+.copy-link:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fdfdfd;
+}
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.social-link {
+    color: #fdfdfd;
+    border: 1px solid #fdfdfd;
+    border-radius: 50%;
+    font-size: 1.1em;
+    padding: .5em;
+    margin: .5em;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+.social-link:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+@media  screen and (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .copy-image {
+       width: 80%;
+    }
+    .copy-container {
+        text-align: center;
+        width: 80%;
+    }
+    .copy-title {
+        font-size: 1.5em;
+    }
+    .footer-social {
+        justify-content: center;
+    }
+}
